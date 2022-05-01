@@ -232,6 +232,7 @@
                             <li>We just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</li>
                             <li>Qualified and trained teachers, a playful learning environment ensure a high-quality experience for children.</li>
                             <li>We provide developmentally enriching & fun learning space for students.</li>
+                            <li>Brings out the elements of joy, excitement, health, good values and interaction with one another.</li>
                         </ul>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
