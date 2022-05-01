@@ -72,10 +72,22 @@
         width: 55%;
         padding: 5%;
     }
-    .animation{
+    .first .animation{
         width: 650px; 
         margin-top: 310px;
         animation: mover 1000ms infinite alternate;
+    }
+    .admission-dashboard{
+        position:relative;
+    }
+    .admission-dashboard .animation{
+        height:100%;
+    }
+    .admission-dashboard .animation img{
+        position:absolute;
+        width:45px;
+        animation: mover 1000ms infinite alternate;
+        opacity:0.4;
     }
     @keyframes mover{
         0% {
@@ -85,6 +97,35 @@
             transform: translateY(-10px);
         }
     }
+    .admission-dashboard .animation img:nth-child(1){
+        top:5%;
+        left:20%;
+    }
+    .admission-dashboard .animation img:nth-child(2){
+        top:88%;
+        left:90%;
+    }
+    .admission-dashboard .animation img:nth-child(3){
+        top:46%;
+        left:44%;
+    }
+    .admission-dashboard .animation img:nth-child(4){
+        top:88%;
+        left:9%;
+    }
+    .admission-dashboard .animation img:nth-child(5){
+        top:6%;
+        left:87%;
+    }
+    .admission-dashboard .animation img:nth-child(6){
+        top:32%;
+        left:10%;
+    }
+    .admission-dashboard .animation img:nth-child(7){
+        top:95%;
+        left:39%;
+    }
+    
 
     .name{
         padding-left: 300px !important;
@@ -161,7 +202,7 @@
 	<img src="images/img2.png" class="w-100" style="background: beige;">
 </div> -->
 
-<div class="container-fluid first">
+<div class="container-fluid first ">
     <div class="row d-flex align-items-center">
         <div class="col-md-4">
             <img src="images/asian.png" class="animation">
@@ -214,9 +255,20 @@
     </div>
 </div>
 
+
+<div class="container-fluid admission-dashboard">
+    
 <h1 class="text-center p-5">Dashboard/Apply For Admission</h1>
 
-<div class="container-fluid">
+    <div class="animation">
+        <img src="images/space-science.png" alt="">
+        <img src="images/space-science.png" alt="">
+        <img src="images/ice-cream.png" alt="">
+        <img src="images/ice-cream.png" alt="">
+        <img src="images/ice-cream-candy.png" alt="">
+        <img src="images/ice-cream-candy.png" alt="">
+        <img src="images/space-science.png" alt="">
+    </div>
 	<div class="row">
 		<div class="col-md-6 ps-5">
             <img src="images/kids.png" width="100%">	
