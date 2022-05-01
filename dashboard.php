@@ -22,6 +22,24 @@
     body{
         font-family: 'Open Sans', sans-serif;
     }
+    .col-md-4 a{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-md-4{
+        margin-bottom: 10px;
+        transition: 0.4s;
+    }
+    .col-md-4:hover{
+        transform: scale(1.05);
+    }
+    .col-md-4:hover a{
+        color: white !important;
+    }
+
 
     .first{
         background-image: url('images/g.png');
@@ -31,7 +49,29 @@
         background-size: cover;
         /*background-position: center;*/
     }
-
+    .admission-open{
+        flex: 0 0 50%;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 800px;
+        margin: auto;
+        padding: 3%;
+        padding-top: 20%;
+        width: 100%;
+        background-image: url(images/e.png);
+        background-size: cover;
+        color: white;
+    }
+    .admission-open-img{
+        width: 45%;
+    }
+    .admission-open-img img{
+        width: 70%;
+    }
+    .admission-open-info{
+        width: 55%;
+        padding: 5%;
+    }
     .animation{
         width: 650px; 
         margin-top: 310px;
@@ -45,7 +85,7 @@
             transform: translateY(-10px);
         }
     }
-    
+
     .name{
         padding-left: 300px !important;
         padding-top: 170px;
@@ -67,24 +107,27 @@
 </div> -->
 
 <div class="container-fluid first">
-    <div class="row">
+    <div class="row d-flex align-items-center">
         <div class="col-md-4">
             <img src="images/asian.png" class="animation">
         </div>
         <div class="col-md-8">
             <div class="name">Hi, <?php  echo $_SESSION['n']; ?></div>
+            <br>
             <div class="second">
                 <!-- <h5 style="color: darkblue;">Welcome to a world of joy,</h5> -->
                 <h5 style="color: purple; padding-left: 6px;">Welcome to a world of joy where little ones discover root and wings to fly</h5>
                 <!-- <p>Kiddozone is delighted to welcome you to our world of joy where little learners feel safe, free, happy, and as cherished as they are at home. Nurtured by our trained, qualified, passionate team of teachers and caregivers. Surrounded by age-appropriate play way methodologies, hands-on explorations, theme-based activities, stories, clubs, camps and best-in-tution amenities. Here, we just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</p> -->
-                <p><marquee style="color: red; font-size: 30px; font-family: 'Cabin Sketch', cursive;">ADMISSIONS ARE NOW OPEN FOR 2022-2023</marquee></p>
-            </div> 
+                <!--p><marquee style="color: red; font-size: 30px; font-family: 'Cabin Sketch', cursive;">ADMISSIONS ARE NOW OPEN FOR 2022-2023</marquee></p-->
+            </div>
+            <br> 
             <div class="second">
                 <h3>Who we are?</h3>
                 <ul>
                     <li>Kiddozone was established in the year 2022.</li>
                     <li>We are an open platform for every kid to grow, nurture and prosper in the cycle of life.</li>
                 </ul>
+                <br>
                 <h3>What we do?</h3>
                 <ul>
                     <li>We just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</li>
@@ -101,7 +144,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-6 ps-5">
-            <img src="images/img5.png" width="600">	
+            <img src="images/kids.png" width="100%">	
 		</div>
 		<div class="col-md-6 row">
             <?php 
@@ -113,13 +156,17 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col">LKG</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">LKG</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">LKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4">
+               <a href="admission_display.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-1">LKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a> 
+            </div>
+            
             <?php  
                 }
             ?>
@@ -133,13 +180,15 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col">UKG</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-1">UKG</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">UKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">UKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -153,13 +202,15 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">1st STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">1st STANDARD</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">1st STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">1st STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -173,7 +224,7 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "2nd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">2nd STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "2nd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">2nd STANDARD</a></div>
             <?php
                 }
                 else
@@ -199,7 +250,8 @@
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "3rd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">3rd STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "3rd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">3rd STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -213,13 +265,15 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "4th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">4th STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "4th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">4th STANDARD</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "4th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">4th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "4th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">4th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -233,13 +287,15 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "5th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">5th STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "5th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">5th STANDARD</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "5th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">5th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "5th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">5th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -253,13 +309,15 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "6th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">6th STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "6th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">6th STANDARD</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "6th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">6th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "6th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">6th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -273,13 +331,15 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "7th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">7th STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "7th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">7th STANDARD</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "7th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">7th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "7th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">7th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
@@ -293,18 +353,32 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "8th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">8th STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "8th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">8th STANDARD</a></div>
+            
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "8th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">8th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <div class="col-md-4"><a href="admission_display.php?class=<?php echo "8th" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">8th STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a></div>
+            
             <?php  
                 }
             ?>
 		</div>
 	</div>
+</div>
+<div class="admission-open d-flex">
+    <div class="admission-open-img">
+        <img src="images/5-pair.png">
+    </div>
+    <div class="admission-open-info">
+        <h2>
+            Admission Open
+        </h2>
+        <p>Admission to a preschool is a critical milestone in the life of every parent. We all want to choose the greatest preschool for our children's early education and lay a good foundation for their future. KiddoZone preschool is the greatest preschool in India for your child's educational journey, with a scientifically planned preschool curriculum, outstanding facility, and compassionate teachers. KiddoZone's preschool admissions procedure is relatively straightforward. Fill out the preschool application and get an appointment with one of our admissions counsellors now.</p>
+    </div>
+    
 </div>
 
 <?php include('footer.php'); ?>
