@@ -154,7 +154,6 @@
         margin-top:35px;
     }
     .testimonials .carousel-item{
-        display: flex;
         align-items:center;
     }
     .testimonials .testimonial{
@@ -191,6 +190,14 @@
     }
     .testimonials h6{
         font-family: 'Cabin Sketch', cursive;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        color:white;
+        background-color:purple;
+        padding:3px !important;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width:8% !important;
     }
     
 
@@ -245,6 +252,12 @@
                             <ul>
                             <li>To cultivate young minds in a culturally appropriate setting and to create opportunity for them to realise their full potential.</li>
                             </ul>
+                            <br>
+                            <h3>Philosophy</h3>
+                            <ul>
+                                <li>To provide each child with the culturally appropriate environment, moral values, love, and protection required for healthy physical, mental, and spiritual development.</li>
+                            </ul>
+
                         </div>
 
                     </div>
@@ -259,7 +272,7 @@
 
 <div class="container-fluid admission-dashboard">
     
-<h1 class="text-center p-5">Dashboard/Apply For Admission</h1>
+    <h1 class="text-center p-5">Dashboard/Apply For Admission</h1>
 
     <div class="animation">
         <img src="images/space-science.png" alt="">
@@ -519,7 +532,27 @@
                 <div class="testimonial" >
                     <div class="quote"><i class="bi bi-quote"></i></div>
                     <div class="feedback">
-                        <h3>Person Name</h3>
+                        <h3>Person Name 1</h3>
+                        <h6>Parent</h6>
+                        <p>The teaching concept has been acclaimed by education enthusiasts and experts as well as parents, teachers and children from across the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial" >
+                    <div class="quote"><i class="bi bi-quote"></i></div>
+                    <div class="feedback">
+                        <h3>Person Name 2</h3>
+                        <h6>Parent</h6>
+                        <p>The teaching concept has been acclaimed by education enthusiasts and experts as well as parents, teachers and children from across the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial" >
+                    <div class="quote"><i class="bi bi-quote"></i></div>
+                    <div class="feedback">
+                        <h3>Person Name 3</h3>
                         <h6>Parent</h6>
                         <p>The teaching concept has been acclaimed by education enthusiasts and experts as well as parents, teachers and children from across the world.</p>
                     </div>
