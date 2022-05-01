@@ -33,12 +33,49 @@
     .second{
         padding-left: 180px !important;
     }
+
+    .counter{
+        border: 2px solid black;
+    }
+
 </style>
 
 <body>
 
-<div style="">
-	<img src="images/schoolfun.png" style="height: 550px; margin: auto; width: 100%;">
+<div style="margin-left: 98px;">
+	<img src="images/blackboard.png" style="height: 550px; margin: auto; width: 90%;">
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="title-block counter">
+                <h2>1600+</h2>
+                <span>Registered Users</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="title-block counter">
+                <h2>3+</h2>
+                <span>Teaching staff</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="title-block counter">
+                <h2>2000+</h2>
+                <span>Happy Students</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="title-block counter">
+                <h2>10+</h2>
+                <span>Years of Experience</span>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
 </div>
 
 <?php include('footer.php'); ?>
