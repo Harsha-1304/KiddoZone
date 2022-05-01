@@ -69,7 +69,10 @@
                 <li><a href="" class="nav-link" style="color: #624dd6;">CONTACT US</a></li>
             </ul>
             <!--menu ul end-->
-        </div>  
+        </div> 
+        <div> 
+            <a href="" style="color: #624dd6; text-decoration: none;" data-bs-toggle="modal" data-bs-target="#aa">Sign In</a>
+        </div>
     </div><!--container-fluid end-->
 </nav> <!--navbar end-->
 

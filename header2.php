@@ -51,9 +51,9 @@
 
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
-        <a href="navbar.html" style="text-decoration: none; color: purple; height: 102px;">
-            <img src="images/logo.png" style="width: 80px; border-radius: 200px; margin-left: 100px;" class="weblogo">
-            <p style="margin-left: 97px;">KIDDOZONE</p>
+        <a href="navbar.html" style="text-decoration: none; color: purple;">
+            <img src="images/logo.png" style="width: 70px; border-radius: 200px; margin-left: 100px;" class="weblogo">
+            <p style="margin-left: 97px; margin-bottom:0px;">KIDDOZONE</p>
 
             <!--Mobile view logo start-->
             <img src="https://www.firstfiddle.in/assets/images/logo-for-mobile.png" class="moblogo">
@@ -66,7 +66,7 @@
 
         <div class="collapse navbar-collapse" id="pn">
             <!--menu ul start-->
-            <ul class="navbar-nav" style="margin-left: 53px; margin-bottom: 24px;">
+            <ul class="navbar-nav" style="margin: auto;">
                 <li><a href="" class="nav-link" style="color: #624dd6;">HOME</a></li>
                 <li><a href="" class="nav-link" style="color: #51e29a;">ABOUT</a></li>
                 <li><a href="" class="nav-link" style="color: #ffc10d;">ADMISSIONS</a></li>
@@ -86,7 +86,7 @@
          ?>
 
         <div class="dropdown" style="margin-right: 61px;">
-            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="padding-bottom: 0;">
+            <a class="btn dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="padding-bottom: 0;">
                 <img src="images/dashboardpic.svg" width="50" style="margin-left: 0px;">
                 <div class="text-danger ms-2">
                     <?php 
