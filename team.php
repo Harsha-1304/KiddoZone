@@ -45,41 +45,59 @@
     }
 
     .team{
-        padding-top:50px;
+        padding:70px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:contain;
     }
     .team-heading h2, .team-heading p{
         width:fit-content;
         margin:auto;
     }
 
+
     .team-grid{
         display: grid;
+        width:60%;
+        margin:auto;
         grid-template-columns: auto auto;
         margin-top:50px;
+        
     }
     .grid-item{
-        width: 300px;
+        width: 250px;
+        position:relative;
         background-color: #dd4f75;
         border-radius:10px;
         margin:auto;
+        padding-top:90px;
+        margin-top:120px;
     }
     .team-info{
         padding:15px;
         color:white;
     }
     .grid-item .team-img{
-        width: 100%;
+        width:180px;
+        height:180px;
+        margin:auto;
+        position: absolute;
+        top:-90px;
+        left:35px;
+        border-radius:50%;
         overflow: hidden;
+        box-shadow:0px 3px 10px #000000aa;
     }
+
     .grid-item .team-img img{
         width: 100%;
-        height: 350px;
-
+        height: 250px;
     }
 
     .team-info h6, .team-info p{
         width:fit-content;
         margin: auto;
+        text-align:center;
     }
 </style>
 
@@ -98,7 +116,7 @@
 
     <div class="team">
 
-        <div class="container">
+        <div class="">
             <div class="team-heading">
                 <h2>Our Team</h2>
                 <p>This is our entusiastic member of Kiddozone</p>
@@ -109,6 +127,8 @@
                     <div class="team-info">
                         <h6>Harsha Sharma</h6>
                         <p>Web Designer</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                 </div>
@@ -117,6 +137,8 @@
                     <div class="team-info">
                         <h6>Harsha Sharma</h6>
                         <p>Web Designer</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                 </div>
