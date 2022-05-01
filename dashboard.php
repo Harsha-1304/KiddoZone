@@ -9,6 +9,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,6 @@
     .col-md-4:hover a{
         color: white !important;
     }
-
 
     .first{
         background-image: url('images/g.png');
@@ -97,6 +97,61 @@
     .second{
         padding-left: 180px !important;
     }
+    .carousel-inner {
+        min-height:300px;
+    }
+    h3{
+        font-family: 'Cabin Sketch', cursive;
+        color:purple;
+    }
+    h1{
+        font-family: 'Londrina Sketch', cursive;
+        font-size: xxx-large !important;
+    }
+    .testimonials{
+        padding:20px;
+        margin-top:35px;
+    }
+    .testimonials .carousel-item{
+        display: flex;
+        align-items:center;
+    }
+    .testimonials .testimonial{
+        background-color:red;
+        padding:35px;
+        position: relative;
+        margin:auto;
+        margin-top:75px;
+        text-align:center;
+        color:white;
+        width:90%;
+        border-radius:50px;
+        height:200px;
+        background-image:url(images/b.png);
+        background-size:cover;
+        background-position:center;
+    }
+    .testimonials .quote{
+        background-color:purple;
+        height:100px;
+        width:100px;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-size:55px;
+        border:5px solid white;
+        margin:-85px auto 0px auto;
+    }
+    .testimonials h3{
+        margin-bottom:0px;
+        color:white;
+    }
+    .testimonials h6{
+        font-family: 'Cabin Sketch', cursive;
+    }
+    
 
 </style>
 
@@ -122,18 +177,38 @@
             </div>
             <br> 
             <div class="second">
-                <h3>Who we are?</h3>
-                <ul>
-                    <li>Kiddozone was established in the year 2022.</li>
-                    <li>We are an open platform for every kid to grow, nurture and prosper in the cycle of life.</li>
-                </ul>
-                <br>
-                <h3>What we do?</h3>
-                <ul>
-                    <li>We just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</li>
-                    <li>Qualified and trained teachers, a playful learning environment ensure a high-quality experience for children.</li>
-                    <li>We provide developmentally enriching & fun learning space for students.</li>
-                </ul>
+                <div id="about-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                        <h3>Who we are?</h3>
+                        <ul>
+                            <li>Kiddozone was established in the year 2022.</li>
+                            <li>We are an open platform for every kid to grow, nurture and prosper in the cycle of life.</li>
+                        </ul>
+                        <br>
+                        <h3>What we do?</h3>
+                        <ul>
+                            <li>We just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</li>
+                            <li>Qualified and trained teachers, a playful learning environment ensure a high-quality experience for children.</li>
+                            <li>We provide developmentally enriching & fun learning space for students.</li>
+                        </ul>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <h3>Vision</h3>
+                            <ul>
+                                <li>To facilitate, energise, and enrich childhood by supporting the development of the mind, body, and spirit, therefore assisting children in becoming lifelong learners.</li>
+                            </ul>
+                            <br>
+                            <h3>Mission</h3>
+                            <ul>
+                            <li>To cultivate young minds in a culturally appropriate setting and to create opportunity for them to realise their full potential.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                
             </div>
         </div>
     </div>
@@ -244,7 +319,9 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "3rd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">3rd STANDARD</a>
+            <div class="col-md-4"><a href="admission.php?class=<?php echo "3rd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">3rd STANDARD</a></div>
+
+            
             <?php
                 }
                 else
@@ -373,12 +450,40 @@
         <img src="images/5-pair.png">
     </div>
     <div class="admission-open-info">
-        <h2>
+        <h1>
             Admission Open
-        </h2>
+        </h1>
+        <br>
         <p>Admission to a preschool is a critical milestone in the life of every parent. We all want to choose the greatest preschool for our children's early education and lay a good foundation for their future. KiddoZone preschool is the greatest preschool in India for your child's educational journey, with a scientifically planned preschool curriculum, outstanding facility, and compassionate teachers. KiddoZone's preschool admissions procedure is relatively straightforward. Fill out the preschool application and get an appointment with one of our admissions counsellors now.</p>
     </div>
     
+</div>
+<div class="testimonials" >
+    <h1 style="text-align:center;">Customer Reviews</h1>
+    <div class="carousel slide" data-bs-ride="carousel" id="testimonials">
+        <div class="carousel-inner container">
+            <div class="carousel-item active">
+                <div class="testimonial" >
+                    <div class="quote"><i class="bi bi-quote"></i></div>
+                    <div class="feedback">
+                        <h3>Person Name</h3>
+                        <h6>Parent</h6>
+                        <p>The teaching concept has been acclaimed by education enthusiasts and experts as well as parents, teachers and children from across the world.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+
 </div>
 
 <?php include('footer.php'); ?>
