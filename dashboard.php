@@ -82,14 +82,14 @@
             <div class="second">
                 <h3>Who we are?</h3>
                 <ul>
-                    <li><i class="fa fa-check"></i>Kiddozone was established in the year 2022.</li>
-                    <li><i class="fa fa-check"></i>We are an open platform for every kid to grow, nurture and prosper in the cycle of life.</li>
+                    <li>Kiddozone was established in the year 2022.</li>
+                    <li>We are an open platform for every kid to grow, nurture and prosper in the cycle of life.</li>
                 </ul>
                 <h3>What we do?</h3>
                 <ul>
-                    <li><i class="fa fa-check"></i>We just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</li>
-                    <li><i class="fa fa-check"></i>Qualified and trained teachers, a playful learning environment ensure a high-quality experience for children.</li>
-                    <li><i class="fa fa-check"></i>We provide developmentally enriching & fun learning space for students.</li>
+                    <li>We just kindle the spark of curiosity in the already bright child that yours is so that he/she sparkles forever in future.</li>
+                    <li>Qualified and trained teachers, a playful learning environment ensure a high-quality experience for children.</li>
+                    <li>We provide developmentally enriching & fun learning space for students.</li>
                 </ul>
             </div>
         </div>
@@ -103,7 +103,7 @@
 		<div class="col-md-6 ps-5">
             <img src="images/img5.png" width="600">	
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 row">
             <?php 
                 $user_id = $_SESSION['id'];
                 $data = "select * from admission where user_id = $user_id and class = 'lkg' ";
@@ -113,13 +113,13 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">LKG</a>
+            <a href="admission.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col">LKG</a>
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">LKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <a href="admission_display.php?class=<?php echo "lkg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">LKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
             <?php  
                 }
             ?>
@@ -133,13 +133,13 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">UKG</a>
+            <a href="admission.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col">UKG</a>
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">UKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <a href="admission_display.php?class=<?php echo "ukg" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">UKG <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
             <?php  
                 }
             ?>
@@ -153,13 +153,13 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">1st STANDARD</a>
+            <a href="admission.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">1st STANDARD</a>
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">1st STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <a href="admission_display.php?class=<?php echo "1st" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">1st STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
             <?php  
                 }
             ?>
@@ -173,13 +173,13 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "2nd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">2nd STANDARD</a>
+            <a href="admission.php?class=<?php echo "2nd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">2nd STANDARD</a>
             <?php
                 }
                 else
                 {
             ?>
-            <a href="admission_display.php?class=<?php echo "2nd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">2nd STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
+            <a href="admission_display.php?class=<?php echo "2nd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">2nd STANDARD <span style="font-size: 12px;">(already filled, please click to see details)</span></a>
             <?php  
                 }
             ?>
@@ -193,7 +193,7 @@
                 if($num == 0) 
                 {
             ?>
-            <a href="admission.php?class=<?php echo "3rd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark">3rd STANDARD</a>
+            <a href="admission.php?class=<?php echo "3rd" ?>" class="form-control mb-1 btn btn-outline-primary text-dark col-xs-3">3rd STANDARD</a>
             <?php
                 }
                 else

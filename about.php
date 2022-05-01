@@ -21,22 +21,27 @@
     body{
         font-family: 'Open Sans', sans-serif;
     }
-    
-    .name{
-        padding-left: 300px !important;
-        padding-top: 170px;
-        font-size: 64px;
-        /*font-family: 'Cabin Sketch', cursive;*/
-        font-family: 'Londrina Sketch', cursive;
-    }
-
-    .second{
-        padding-left: 180px !important;
-    }
 
     .counter{
-        border: 2px solid black;
+        border-left: 2px solid red;
     }
+
+    .counting{
+        background: url('images/img17.jpg');
+    height: 200px;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    background-image: url(/static/media/img.6186ff1c.jpeg);
+    box-sizing: border-box;
+    }
+    .count{
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
 
 </style>
 
@@ -77,6 +82,32 @@
         <div class="col-md-2"></div>
     </div>
 </div>
+
+
+
+<div class="container count">
+    <div class="row counting">
+        <div class="col-md-3 card aos-init aos-animate" data-aos="flip-left">
+            <div class="card-header"><h1>1250</h1></div>
+            <div class="card-body"><p>Pick Up Points</p></div>
+        </div>
+        <div class="col-md-3 card aos-init aos-animate" data-aos="flip-left">
+            <div class="card-header"><h1>3952</h1></div>
+            <div class="card-body"><p>Workers All Time</p></div>
+        </div>
+        <div class="col-md-3 card aos-init aos-animate" data-aos="flip-left">
+            <div class="card-header"><h1>1350</h1></div>
+            <div class="card-body"><p>Garbage Collector</p></div>
+        </div>
+        <div class="col-md-3 card aos-init aos-animate" data-aos="flip-left">
+            <div class="card-header"><h1>1580</h1></div>
+            <div class="card-body"><p>Registered Users</p></div>
+        </div>
+    </div>
+</div>
+
+
+
 
 <?php include('footer.php'); ?>
 
