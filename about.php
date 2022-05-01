@@ -28,19 +28,60 @@
 
     .counting{
         background: url('images/img17.jpg');
-    height: 200px;
-    display: flex;
-    width: 90%;
-    flex-direction: row;
-    justify-content: center;
-    flex-flow: wrap;
-    background-image: url(/static/media/img.6186ff1c.jpeg);
+    /* height: 200px; */
+    /* width: 90%; */
     box-sizing: border-box;
     }
     .count{
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 150px;
     margin-top: 50px;
+}
+
+.card {
+  
+  /* width: 250px; */
+  /* background-color: transparent; */
+  border: 1px solid #ccc;
+  /* margin: 20px; */
+  transition: 0.3s;
+  margin-top: 70px;
+  margin-bottom: -5px;
+  /* height: 200px; */
+  background-color: #00000000 !important;
+}
+
+.card-header h1{
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  background-color: #00000000 !important;
+  font-size: 30px;
+  /* font-family: cursive; */
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+.card-body {
+  color: black;
+  margin-top: 20px;
+  padding: 0px 20px;
+  text-align: center;
+  font-size:20px;
+  font-weight: 600;
+  background-color: white;
+  
+}
+.card:hover p{
+  color: #336600;
+  /* font-family: sans-serif; */
+  font-family: 'Playfair Display', serif;
+  font-weight:bold;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 2px 2px 1px #33cc00;
+  
+
 }
 
 </style>
@@ -52,9 +93,9 @@
 </div>
 
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-2"></div>
+        <!-- <div class="col-md-2"></div> -->
         <div class="col-md-2">
             <div class="title-block counter">
                 <h2>1600+</h2>
@@ -79,7 +120,7 @@
                 <span>Years of Experience</span>
             </div>
         </div>
-        <div class="col-md-2"></div>
+        <!-- <div class="col-md-2"></div> -->
     </div>
 </div>
 
