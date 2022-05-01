@@ -138,8 +138,8 @@
     .second{
         padding-left: 180px !important;
     }
-    .carousel-inner {
-        min-height:300px;
+    .second .carousel-inner {
+        min-height:400px;
     }
     h3{
         font-family: 'Cabin Sketch', cursive;
