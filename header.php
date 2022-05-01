@@ -67,12 +67,12 @@
                 <li><a href="" class="nav-link" style="color: #10b6fe;">PARENTS</a></li>
                 <li><a href="" class="nav-link" style="color: #ffc10d;">GALLERY</a></li>
                 <li><a href="" class="nav-link" style="color: #624dd6;">CONTACT US</a></li>
+                <li><a href="" style="color: white; background: #624dd6; border-radius:5px; padding: 8px 10px; margin:auto;" data-bs-toggle="modal" data-bs-target="#aa" class="nav-link">Sign In</a></li>
             </ul>
+            
             <!--menu ul end-->
         </div> 
-        <div> 
-            <a href="" style="color: #624dd6; text-decoration: none;" data-bs-toggle="modal" data-bs-target="#aa">Sign In</a>
-        </div>
+        
     </div><!--container-fluid end-->
 </nav> <!--navbar end-->
 
