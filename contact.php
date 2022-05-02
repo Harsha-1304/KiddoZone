@@ -29,7 +29,7 @@
         font-size:xx-large !important;
     }
     .contact-us .row .col-5{
-        padding: 15% 2% 8% 2%;
+        padding: 12% 2% 6% 2%;
     }
     .contact-us .row .img img{
         width: 100%;
@@ -38,8 +38,9 @@
         font-size:large;
     }
     .contact-us{
+        margin-top: -6%;
         background-image:url(images/c.png);
-        padding-top:7%;
+        padding-top:5%;
         background-size:100% 100%;
         background-position:center;
         color:white;
@@ -78,7 +79,7 @@
 <body>
     <div class="contact-us">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 
                 <div class="col-5">
                     <h2>Contact Us</h2>
