@@ -51,9 +51,10 @@
         width:70%;
         margin:auto ;
         padding:10% 5%;
-        background-color:#CC6699;
         border-radius:10px;
-        background-image:url(images/g4.png);
+        background-image:url(images/c.png);
+        background-position:bottom;
+
     }
     .submit{
         width:40%;
