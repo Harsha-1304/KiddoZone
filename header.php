@@ -11,21 +11,27 @@
       opacity: 0.9;
       /*padding-bottom: 0px;*/
     }
-
+    .navbar-nav{
+        width:90%;
+        margin-left:auto;
+        justify-content:flex-end;
+    }
     .navbar-nav li{
-      padding: 0 10px;
+        padding: 3px 10px;
+    }
+    .navbar-nav li a{
+        display: inline-block;
+        font-weight: 600;
+        padding: 10px 50px;
     }
 
-    .navbar-nav li a{
-      /*color: #fff !important;*/
-      /*color: black !important;*/
-      font-weight: 600;
-      font-size: 20px;
-    }
-     
     .navbar-nav li:hover{
-        background-color: #e7d2d9;
+        background-color: #8E44AD;
         border-radius: 30px;
+    }
+    .navbar-nav li:hover a{
+        color:white !important;
+        transition:0.3s;
     }
 
     .navbar-nav li:hover:last-child{
@@ -67,7 +73,7 @@
             <ul class="navbar-nav ms-auto">
                 <li><a href="" class="nav-link" style="color: #624dd6;">HOME</a></li>
                 <li><a href="" class="nav-link" style="color: #51e29a;">ABOUT</a></li>
-                <li><a href="" class="nav-link" style="color: #dd4f75;">FRANCHISE</a></li>
+                <!--li><a href="" class="nav-link" style="color: #dd4f75;">FRANCHISE</a></li-->
                 <li><a href="" class="nav-link" style="color: #88d914;">OUR TEAM</a></li>
                 <li><a href="" class="nav-link" style="color: #10b6fe;">PARENTS</a></li>
                 <li><a href="" class="nav-link" style="color: #ffc10d;">GALLERY</a></li>
