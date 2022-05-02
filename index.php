@@ -38,11 +38,12 @@
     }
 
     .carousel-caption{
-    	bottom: 37% !important;
+    	bottom: 34% !important;
     }
 
     .carousel-caption h1{
-    	font-size: 60px;
+    	/*font-size: 60px;*/
+        font-size: 50px;
     	color: purple;
         font-family: 'Londrina Sketch', cursive;
     }
@@ -58,6 +59,8 @@
 
     .slider{
     	height: 400px;
+        /*height: 500px;*/
+        /*height: 617px;*/
     }
 
     .bg1{
@@ -304,30 +307,39 @@
 </head>
 <body>
 
+<!-- <div>
+    <img src="images/slider4.jpg" class="w-100 slider">
+    <div class="carousel-caption"><h1>Welcome to Kiddozone!</h1></div>
+</div> -->
+<!-- <img src="images/slider3a.png" style="width: 195px; margin-top: -614px; margin-left: 40px;"> -->
+<!-- <img src="images/square.png" style="width: 195px; margin-top: -614px; margin-left: 40px;"> -->
+<!-- <img src="images/peach.png" style="width: 140px; margin-top: -642px; margin-left: 1029px;"> -->
+
 <div class="carousel slide" data-bs-ride="carousel" id="a">
 
     <div class="carousel-inner">
-	    <div class="carousel-item active" data-bs-interval="2000">
-            <img src="images/slider1.jpg" class="w-100 slider" alt="...">
+	    <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images/picture.png" class="w-100 slider" alt="...">
             <!-- <div class="carousel-caption"><h1>We teach, you enjoy!</h1></div> -->
 	    </div> <!--carousel item 0 end-->
 
-        <!-- <div class="carousel-item" data-bs-interval="2000"> -->
-            <!-- <img src="images/slider2.jpg" class="w-100 slider" alt="..."> -->
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/pencils.png" class="w-100 slider" alt="...">
             <!-- <div class="carousel-caption special"><h1>We teach, you enjoy!</h1></div> -->
-	    <!-- </div> --> <!--carousel item 1 end-->
+	    </div> <!--carousel item 1 end-->
 
-	    <!-- <div class="carousel-item" data-bs-interval="2000"> -->
-            <!-- <img src="images/slider3.png" class="w-100 slider" alt="..."> -->
+	    <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/vintage.png" class="w-100 slider" alt="...">
             <!-- <div class="carousel-caption"><h1>Good food within minutes</h1></div> -->
-	    <!-- </div> --> <!--carousel item 2 end-->
+	    </div> <!--carousel item 2 end-->
 
-	    <div class="carousel-item" data-bs-interval="4000">
+	    <div class="carousel-item" data-bs-interval="2000">
             <img src="images/slider4.jpg" class="w-100 slider" alt="...">
-            <div class="carousel-caption"><h1>Your child's education partner</h1></div>
-	    </div><!--carousel item 3 end-->
+            <!-- <div class="carousel-caption"><h1>Your child's education partner</h1></div> -->
+	    </div> <!--carousel item 3 end-->
 	</div><!--carousel-inner end-->   
 </div><!-- carousel end -->
+
 
 <!-- <div class="check1" data-aos="zoom-in" data-aos-duration="3000">
     <h2 class="text-center">Learner Centric</h2>

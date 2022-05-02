@@ -16,7 +16,41 @@ $class = $_GET['class'];
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 text-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="200"><img src="images/copy.png" style="max-width: 100%;"></div>
+    <div class="col-md-6">
+      <h1>My Details</h1>
+      <?php
+          $i = 1;
+          $user_id = $_SESSION['id'];
+          include("dbcon.php");
+          $data = "select * from admission where user_id = $user_id and class = '$class' ";
+          $result = mysqli_query($con,$data); // returns a object
+          //echo "<pre>";
+          //print_r($result);
+
+          while($d = mysqli_fetch_array($result)){
+            //echo "<pre>";
+            //print_r($d);
+      ?>
+      <div>
+        <p>S No. - <?php echo $i++ ?></p>
+        <p>Parent Name - <?php echo $d['parentname'] ?></p>
+        <p>Email - <?php echo $d['email'] ?></p>
+      </div>
+      <?php
+        }
+      ?>
+    </div>
+  </div>
+</div>
  
+
+
+
 <div class="container-fluid" style="margin-top: 200px;">
 	<div class="row">
 		<h1 class="text-center bg-dark text-white">MY DETAILS</h1>
