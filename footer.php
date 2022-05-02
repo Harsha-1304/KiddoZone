@@ -9,7 +9,9 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
-
+		.subscribe{
+			padding-right:10%;
+		}
         .subscribe .form_input{
             background-color: white;
             color: #fff;
@@ -37,7 +39,7 @@
 			font-family: 'Cabin Sketch', cursive;
 			font-size:xx-large !important;
 		}
-		.footer .col-4{
+		.footer .col-4,.footer .col-5, .footer .col-3 {
 			padding:20px 25px;
 		}
 		.footer .col-1 .bi{
@@ -56,7 +58,9 @@
 			text-decoration:none;
 			margin-bottom:10px;
 		}
-
+		.subscribe{
+			padding-right:10%;
+		}
     </style>
 </head>
 <body>
@@ -165,16 +169,19 @@
 
 				</div>
 
-				<div class="col-4 subscribe">
+				<div class="col-5 subscribe">
 					<h3>Subscribe</h3>
 					<br>
 					<form>
 						<input  type="email" name="e" class="form_input form-control" placeholder="Email Address...">
 						<button type="submit" class="submit">SUBSCRIBE</button>
 					</form>
+					<div class="social">
+						<div class="btn-primary"></div>
+					</div>
 					
 				</div>
-				<div class="col-4 links">
+				<div class="col-3 links">
 					<h3>Links</h3>
 					<br>
 					<ul>

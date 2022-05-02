@@ -287,7 +287,7 @@
 		<div class="col-md-6 ps-5">
             <img src="images/kids.png" width="100%">	
 		</div>
-		<div class="col-md-6 row">
+		<div class="col-md-6 row justify-content-center">
             <?php 
                 $user_id = $_SESSION['id'];
                 $data = "select * from admission where user_id = $user_id and class = 'lkg' ";
