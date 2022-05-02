@@ -9,18 +9,6 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
-    	.z{
-    		font-size: 30px;
-    		position: absolute;
-    	}
-
-    	.y a{
-    		text-decoration: none;
-    		color: #362b75;
-    		font-size: 17px;
-    		font-weight: bold;
-    		line-height: 30px;
-    	}
 
         .subscribe .form_input{
             background-color: white;

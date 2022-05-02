@@ -28,6 +28,11 @@
         border-radius: 30px;
     }
 
+    .navbar-nav li:hover:last-child{
+        background-color: transparent;
+    }
+    
+
     @media(max-width: 768px){
         .weblogo{
             display: inline;
