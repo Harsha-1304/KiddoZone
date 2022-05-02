@@ -71,10 +71,10 @@
         <div class="collapse navbar-collapse" id="pn">
             <!--menu ul start-->
             <ul class="navbar-nav ms-auto">
-                <li><a href="" class="nav-link" style="color: #624dd6;">HOME</a></li>
-                <li><a href="" class="nav-link" style="color: #51e29a;">ABOUT</a></li>
-                <!--li><a href="" class="nav-link" style="color: #dd4f75;">FRANCHISE</a></li-->
-                <li><a href="" class="nav-link" style="color: #88d914;">OUR TEAM</a></li>
+                <li><a href="index.php" class="nav-link" style="color: #624dd6;">HOME</a></li>
+                <li><a href="about.php" class="nav-link" style="color: #51e29a;">ABOUT</a></li>
+                <!-- <li><a href="" class="nav-link" style="color: #dd4f75;">FRANCHISE</a></li> -->
+                <li><a href="team.php" class="nav-link" style="color: #88d914;">OUR TEAM</a></li>
                 <li><a href="" class="nav-link" style="color: #10b6fe;">PARENTS</a></li>
                 <li><a href="" class="nav-link" style="color: #ffc10d;">GALLERY</a></li>
                 <li><a href="" class="nav-link" style="color: #624dd6;">CONTACT US</a></li>
