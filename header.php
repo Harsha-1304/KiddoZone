@@ -23,6 +23,7 @@
         display: inline-block;
         font-weight: 600;
         padding: 10px 50px;
+        font-size:17px;
     }
 
     .navbar-nav li:hover{

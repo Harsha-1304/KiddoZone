@@ -24,6 +24,7 @@
         display: inline-block;
         font-weight: 600;
         padding: 10px 50px;
+        font-size:17px;
     }
 
     .navbar-nav li:hover{
@@ -55,7 +56,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
-        <a href="navbar.html" style="text-decoration: none; color: purple;">
+        <a href="index.php" style="text-decoration: none; color: purple;">
             <img src="images/logo.png" style="width: 70px; border-radius: 200px; margin-left: 100px;" class="weblogo">
             <p style="margin-left: 97px; margin-bottom:0px;">KIDDOZONE</p>
 
