@@ -22,6 +22,7 @@
     }
     h1, h2{
         font-family: 'Cabin Sketch', cursive;
+        font-size: xxx-large !important;
     }
     .hero{
         position: relative;
