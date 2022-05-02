@@ -109,6 +109,8 @@
                 <h1>We're KIDDOZONE</h1>
                 <br>
                 <p>Every day, via play activities and collaborative group work, our priority is on laying the correct foundation for the child.</p>
+                <br>
+                <p>It is easy to see how these attributes identify and promote the highest degree of cohesiveness and productivity possible when stated as a pyramid, with Trust at the base and Results at the top.</p>
             </div>
         </div>
     </div>
