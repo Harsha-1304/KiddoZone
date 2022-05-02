@@ -42,9 +42,11 @@
 
     .team{
         padding:70px;
+        padding-bottom:200px;
         background-repeat:no-repeat;
         background-position:center;
-        background-size:contain;
+        background-size:100% 100%;
+        background-image:url(images/g3.png);
     }
     .team-heading h2, .team-heading p{
         width:fit-content;
@@ -58,7 +60,6 @@
         margin:auto;
         grid-template-columns: auto auto;
         margin-top:50px;
-        
     }
     .grid-item{
         width: 250px;
@@ -67,7 +68,8 @@
         border-radius:10px;
         margin:auto;
         padding-top:90px;
-        margin-top:120px;
+        margin-top:120px;   
+        box-shadow:0px 2px 9px #000000a0;
     }
     .team-info{
         padding:15px;
