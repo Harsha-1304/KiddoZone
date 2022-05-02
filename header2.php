@@ -27,7 +27,7 @@
     }
 
     .navbar-nav li:hover{
-        background-color: #8E44AD;
+        background-color: #D2B4DE;
         border-radius: 30px;
     }
     .navbar-nav li:hover a{
