@@ -29,7 +29,7 @@
         font-size:xx-large !important;
     }
     .contact-us .row .col-5{
-        padding: 10% 3%;
+        padding: 15% 2% 8% 2%;
     }
     .contact-us .row .img img{
         width: 100%;
@@ -38,7 +38,7 @@
         font-size:large;
     }
     .contact-us{
-        background-image:url(images/e.png);
+        background-image:url(images/c.png);
         padding-top:7%;
         background-size:100% 100%;
         background-position:center;
@@ -48,12 +48,12 @@
         padding:10%;
     }
     .form{
-        width:70%;
         margin:auto ;
         padding:10% 5%;
         border-radius:10px;
-        background-image:url(images/c.png);
-        background-position:bottom;
+        background-image:url(images/g4.png);
+        background-position:top;    
+        background-color:#CC6699;
 
     }
     .submit{
@@ -92,14 +92,38 @@
 						</div>
                     
                 </div>
-                <div class="col-5 img">
-                    <img src="images/contact.svg" alt="">
+                <div class="col-5">
+                <div class="form">
+                <div class="head-form">
+                    <h3>Connect With Us</h3>
+                    <br>
+                <p>You are just a click away from us</p>
+                </div>
+                
+                <form method="post" action="connect.php">
+					<div class="mb-2">  
+                        <input type="text" name="n" placeholder="Your Name" class="form-control" required>
+                    </div>
+                    <div class="mb-2">   
+                        <input type="email" name="e" placeholder="Email Address" class="form-control" required>
+                    </div>
+                    <div class="mb-2">   
+                        <input type="text" name="p" placeholder="Phone" class="form-control" required>
+                    </div>
+                    <div class="mb-2">      
+                        <input type="text" name="m" placeholder="Your Message" class="form-control" required>
+                    </div>
+                    <div class="mb-2 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-dark submit">Send</button>
+                    </div>
+                </form>
+            </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="contact-form">
+    <!--div class="contact-form">
         <div class="container">
             <div class="form">
                 <div class="head-form">
@@ -127,7 +151,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div-->
 
 
 <?php include('footer.php'); ?>
