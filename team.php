@@ -20,25 +20,21 @@
     body{
         font-family: 'Open Sans', sans-serif;
     }
+    h1, h2{
+        font-family: 'Cabin Sketch', cursive;
+        color:purple;
+    }
     .hero{
         position: relative;
-        height: 400px;
-        background-color: #624dd6;
-        color:white;
-    }
-    .hero div{
-        position: absolute;
-        top:50%;
-        width: 100%;
-        height: fit-content;
-        margin: auto auto;
+        padding:160px;
+        background-image:url(images/g.png);
+        background-size:100% 100%;
     }
     .hero img{
-        width: 100%;
-        height: 100%;
-        opacity:0.3;
+        width:90%;
+        padding:30px;
     }
-    .hero h3, .hero p{
+    .hero h1, .hero p{
         width: 90%;
         margin:auto;
         text-align:center;
@@ -104,11 +100,18 @@
 <body>
 
 <div class="hero">
-    <img src="images/img10.jpg" alt="">
-    <div>
-        <h3>We're KIDDOZONE</h3>
-        <p>Every day, via play activities and collaborative group work, our priority is on laying the correct foundation for the child.</p>
+    <div class="container">
+        <div class="align-items-center row">
+            <div class="hero-img col-6"><img src="images/support.svg" alt=""></div>
+            <div class="col-6">
+                <h1>We're KIDDOZONE</h1>
+                <br>
+                <p>Every day, via play activities and collaborative group work, our priority is on laying the correct foundation for the child.</p>
+            </div>
+        </div>
     </div>
+    
+    
 
 </div>
 
