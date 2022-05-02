@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
     	.z{
     		font-size: 30px;
@@ -21,32 +22,58 @@
     		line-height: 30px;
     	}
 
-    	.subscribe_form{
-            padding: 55px 0 5px 0;
-        }
-
-        .subscribe_form .form_input{
-            background-color: lavender;
-            border: 1px solid #ffffff;
+        .subscribe .form_input{
+            background-color: white;
             color: #fff;
+			border-radius:5px 5px 0px 0px;
+			min-height:50px;
         }
 
-        .subscribe_form .submit{
+        .subscribe .submit{
             background-color: #362b75;
             color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 50px;
-            padding: 0 10px;
+            font-size: 13px;
+			padding:10px;
             width: 100%;
             border: none;
+			border-radius:0px 0px 5px 5px;
         }
+		.footer{
+			background-image:url(images/g3.png);
+			background-position:center;
+			background-size:50% 170%;
+			background-color:#1A5276;
+			color:white;
+		}
+		.footer h3{
+			font-family: 'Cabin Sketch', cursive;
+			font-size:xx-large !important;
+		}
+		.footer .col-4{
+			padding:20px 25px;
+		}
+		.footer .col-1 .bi{
+			font-size:large;
+			width:fit-content;
+			margin:auto;
+		}
+		.links ul{
+			margin:0px;
+			list-style:none;
+			padding: 0px;
+		}
+		.links ul li a{
+			color:white;
+			display:block;
+			text-decoration:none;
+			margin-bottom:10px;
+		}
 
     </style>
 </head>
 <body>
 
-	<div class="container-fluid mt-5">
+	<!--div class="container-fluid mt-5">
 		<div class="row">
 			<div class="col-md-3" style="background: #fdadc8; font-weight: bold; font-size: 14px; text-align: justify;">
 				<div><span style="color: purple;">KIDDOZONE</span> instils a spirit of joy and fervour in children for learning new things and outshine in the competitive world. <span style="color: blue;">KIDDOZONE</span> has all that a growing child needs to complete his early education.</div>
@@ -89,9 +116,9 @@
 						<input  type="email" name="e" class="form_input form-control" placeholder="Email Address...">
 						<button type="submit" class="submit">SUBSCRIBE</button>
 					</form>
-				</div>
+				</div-->
 				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114542.8185585933!2d78.1208585810471!3d26.21413888462775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5d1792291fb%3A0xff4fb56d65bc3adf!2sGwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1645811159059!5m2!1sen!2sin" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-			    <img src="images/img4.png" width="150" style="margin-left: 200px; margin-top: -407px;">
+			    <!--img src="images/img4.png" width="150" style="margin-left: 200px; margin-top: -407px;">
 			</div>
 			<div class="col-md-3 text-center" style="background: #91e0ff;">
 				<h4>Connect To Us</h4>
@@ -114,7 +141,70 @@
                 </form>
 			</div>
 		</div>
+	</div-->
+
+
+	<div class="footer container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 contact">
+					<h3>Contact US</h3>
+					<br>
+					<div class="row">
+						<div class="col-1">
+							<i class="bi bi-telephone"></i>
+						</div>
+						<div class="col-9">
+							<p>+91 9876543210</p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-1">
+							<i class="bi bi-envelope"></i>
+						</div>
+						<div class="col-9">
+							<p>kiddozone@gmail.com</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1">
+							<i class="bi bi-geo-fill"></i>
+						</div>
+						<div class="col-9">
+							<p>KIDDOZONE Tution Classes<br>Gwalior, India</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-4 subscribe">
+					<h3>Subscribe</h3>
+					<br>
+					<form>
+						<input  type="email" name="e" class="form_input form-control" placeholder="Email Address...">
+						<button type="submit" class="submit">SUBSCRIBE</button>
+					</form>
+					
+				</div>
+				<div class="col-4 links">
+					<h3>Links</h3>
+					<br>
+					<ul>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Admission</a></li>
+						
+						<li><a href="">Team</a></li>
+						<li><a href="">Connect</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+
 	</div>
+	
 
 </body>
 </html>
