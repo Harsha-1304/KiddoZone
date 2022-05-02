@@ -22,13 +22,13 @@
     }
     h1, h2{
         font-family: 'Cabin Sketch', cursive;
-        color:purple;
     }
     .hero{
         position: relative;
         padding:160px;
-        background-image:url(images/g.png);
+        background-image:url(images/g1.png);
         background-size:100% 100%;
+        color:white;
     }
     .hero img{
         width:90%;
