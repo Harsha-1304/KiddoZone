@@ -26,7 +26,7 @@
     .hero{
         position: relative;
         padding:160px;
-        background-image:url(images/g1.png);
+        background-image:url(images/g2.png);
         background-size:100% 100%;
         color:white;
     }
