@@ -42,11 +42,11 @@
     }
 
     .first{
-        background-image: url('images/g.png');
-        height: 1100px;
+        background-image: url('images/g.png'); 
+        padding-bottom:16%;
         width: 100%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         /*background-position: center;*/
     }
     .admission-open{
@@ -73,7 +73,7 @@
         padding: 5%;
     }
     .first .animation{
-        width: 650px; 
+        width: 90%; 
         margin-top: 310px;
         animation: mover 1000ms infinite alternate;
     }
@@ -128,7 +128,7 @@
     
 
     .name{
-        padding-left: 300px !important;
+        padding-left: 150px !important;
         padding-top: 170px;
         font-size: 64px;
         /*font-family: 'Cabin Sketch', cursive;*/
@@ -136,7 +136,6 @@
     }
 
     .second{
-        padding-left: 180px !important;
     }
     .second .carousel-inner {
         min-height:400px;
@@ -210,11 +209,12 @@
 </div> -->
 
 <div class="container-fluid first ">
-    <div class="row d-flex align-items-center">
-        <div class="col-md-4">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+        <div class="col-md-5">
             <img src="images/asian.png" class="animation">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7">
             <div class="name">Hi, <?php  echo $_SESSION['n']; ?></div>
             <br>
             <div class="second">
@@ -267,6 +267,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
 </div>
 
 
