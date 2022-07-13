@@ -76,9 +76,9 @@
                 <li><a href="about.php" class="nav-link" style="color: #51e29a;">ABOUT</a></li>
                 <!-- <li><a href="" class="nav-link" style="color: #dd4f75;">FRANCHISE</a></li> -->
                 <li><a href="team.php" class="nav-link" style="color: #88d914;">OUR TEAM</a></li>
-                <li><a href="" class="nav-link" style="color: #10b6fe;">PARENTS</a></li>
-                <li><a href="" class="nav-link" style="color: #ffc10d;">GALLERY</a></li>
-                <li><a href="" class="nav-link" style="color: #624dd6;">CONTACT US</a></li>
+                <li><a href="parents.php" class="nav-link" style="color: #10b6fe;">PARENTS</a></li>
+                <li><a href="gallery.php" class="nav-link" style="color: #ffc10d;">GALLERY</a></li>
+                <li><a href="contact.php" class="nav-link" style="color: #624dd6;">CONTACT US</a></li>
                 <li><a href="" style="color: white; background: #624dd6; border-radius:5px; padding: 8px 10px; margin:auto;" data-bs-toggle="modal" data-bs-target="#aa" class="nav-link">Sign In</a></li>
             </ul>
             
@@ -87,6 +87,33 @@
         
     </div><!--container-fluid end-->
 </nav> <!--navbar end-->
+
+<div class="modal fade" id="aa">
+    <div class="modal-dialog modal-lg" > <!--modal-xl,sm,lg--->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Sign In Into Your Account</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div><!---modal header end--->
+
+            <div class="modal-body">
+                <form method="post" action="signin.php">
+                    <div class="mb-3">
+                        <label>E-mail:</label>
+                        <input type="email" name="e" placeholder="Enter your e-mail id" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label>Password:</label>
+                        <input type="password" name="p" placeholder="Enter your password" class="form-control" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn" style="background: #b9fa52;">Sign in</button>
+                    </div>
+                </form>
+            </div><!-- modal body--->
+        </div><!--modal content end-->
+    </div><!---modal dialog end-->
+</div><!-- modal end -->
 
 </body>
 </html>
