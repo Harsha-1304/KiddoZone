@@ -133,8 +133,8 @@
             <div class="grid-item">
                     <div class="team-img"><img src="images/img14.jpg" alt=""></div>
                     <div class="team-info">
-                        <h6>Harsha Sharma</h6>
-                        <p>Web Designer</p>
+                        <h6>Sangeeta Sharma</h6>
+                        <p>Teacher</p>
                         <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
@@ -148,7 +148,6 @@
                         <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-
                 </div>
 
             </div>
